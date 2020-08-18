@@ -40,7 +40,7 @@ if __name__ == "__main__":
     image = np.expand_dims(image, 0)
     mask = np.expand_dims(mask, 0)
     
-    #mask= -mask + 255.
+    mask= -mask + 255.
     
     input_image = np.concatenate([image, mask], axis=2)
     

@@ -38,6 +38,8 @@ if __name__ == "__main__":
     print('Shape of image: {}'.format(image.shape))
 
     image = np.expand_dims(image, 0)
+    image[image==0] = 255
+    
     mask = np.expand_dims(mask, 0)
     
     mask= -mask + 255.

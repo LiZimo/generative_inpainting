@@ -41,16 +41,16 @@ if __name__ == "__main__":
     mask = np.expand_dims(mask, 0)
     input_image = np.concatenate([image, mask], axis=2)
     
-    print(image)
-    input('image values in test.py line 45')
+    #print(image)
+    #input('image values in test.py line 45')
 
     sess_config = tf.ConfigProto()
     sess_config.gpu_options.allow_growth = True
     with tf.Session(config=sess_config) as sess:
         input_image = tf.constant(input_image, dtype=tf.float32)
         
-        print(input_image.eval())
-        input('image values after eval in test.py line 53')
+        #print(input_image.eval())
+        #input('image values after eval in test.py line 53')
         
         output = model.build_server_graph(FLAGS, input_image)
         output = (output + 1.) * 127.5

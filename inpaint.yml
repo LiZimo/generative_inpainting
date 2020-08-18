@@ -51,11 +51,11 @@ data_flist:
   ]
 
   lightstage: [
-    '/mount/Users/zli/gen_inpainting_data/data_flist/lightstage_train_shuffled.flist'
-    '/mount/Users/zli/gen_inpainting_data/data_flist/lightstage_train_shuffled.flist'
+    '/mount/Users/zli/gen_inpainting_data/data_flist/lightstage_train_shuffled.flist',
+    '/mount/Users/zli/gen_inpainting_data/data_flist/lightstage_train_shuffled.flist',
   ]
 
-static_view_size: 30
+static_view_size: 10
 #img_shapes: [256, 256, 3]
 img_shapes: [512,512,3]
 height: 256

@@ -23,11 +23,10 @@ random_seed: False
 padding: 'SAME'
 
 # training
-train_spe: 4000
+train_spe: 10
 max_iters: 100000000
 viz_max_out: 10
-val_psteps: 2000
-
+val_psteps: 10
 # data
 data_flist:
   # https://github.com/jiahuiyu/progressive_growing_of_gans_tf
@@ -52,6 +51,7 @@ data_flist:
   ]
 
   lightstage: [
+    '/mount/Users/zli/gen_inpainting_data/data_flist/lightstage_train_shuffled.flist'
     '/mount/Users/zli/gen_inpainting_data/data_flist/lightstage_train_shuffled.flist'
   ]
 

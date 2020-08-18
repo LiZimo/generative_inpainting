@@ -25,6 +25,7 @@ def multigpu_graph_def(model, FLAGS, data, gpu_id=0, loss_type='g'):
 
 
 if __name__ == "__main__":
+    os.environ['CUDA_VISIBLE_DEVICES']='0'
     # training data
     FLAGS = ng.Config('inpaint.yml')
     img_shapes = FLAGS.img_shapes

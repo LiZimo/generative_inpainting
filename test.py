@@ -48,6 +48,10 @@ if __name__ == "__main__":
     sess_config.gpu_options.allow_growth = True
     with tf.Session(config=sess_config) as sess:
         input_image = tf.constant(input_image, dtype=tf.float32)
+        
+        print(input_image.eval())
+        input('image values after eval in test.py line 53')
+        
         output = model.build_server_graph(FLAGS, input_image)
         output = (output + 1.) * 127.5
         output = tf.reverse(output, [-1])
